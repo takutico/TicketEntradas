@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN" "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+<faces-config>
+    <application>
+        <locale-config>
+            <default-locale>es</default-locale>
+            <supported-locale>en</supported-locale>
+        </locale-config>
+        <default-render-kit-id>org.apache.myfaces.trinidad.core</default-render-kit-id>
+    </application>
+    <!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+    <validator>
+        <validator-id>EmailValidator</validator-id>
+        <validator-class>es.entradas.utils.EmailValidator</validator-class>
+    </validator>
+    <validator>
+        <validator-id>NIFValidator</validator-id>
+        <validator-class>es.entradas.utils.NIFValidator</validator-class>
+    </validator>
+
+    <!-- NAVIGATION RULES -->
+    <!-- _____________ LOGIN APLICACION ____________ -->
+    <navigation-rule>
+        <description>
+            Inicio de la aplicación
+        </description>
+        <from-view-id>/index.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>goInsertTicket</from-outcome>
+            <to-view-id>/ticket/ticketInsert.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goWelcomeAdmin</from-outcome>
+            <to-view-id>/welcomeAdmin.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goWelcomeEmpleado</from-outcome>
+            <to-view-id>/welcomeEmpleado.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>datosClienteExterno</from-outcome>
+            <to-view-id>/cliente/datosClienteExterno.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+    <!--managed-bean>
+        <managed-bean-name>admin</managed-bean-name>
+        <managed-bean-class>es.entradas.admin.Admin</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean-->
+
+    <managed-bean>
+        <managed-bean-name>ticketType</managed-bean-name>
+        <managed-bean-class>es.entradas.tickettype.TicketType</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>ticket</managed-bean-name>
+        <managed-bean-class>es.entradas.ticket.Ticket</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>cliente</managed-bean-name>
+        <managed-bean-class>es.entradas.cliente.Cliente</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>category</managed-bean-name>
+        <managed-bean-class>es.entradas.category.Category</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>user</managed-bean-name>
+        <managed-bean-class>es.entradas.user.User</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>menu</managed-bean-name>
+        <managed-bean-class>es.entradas.menu.Menu</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>email</managed-bean-name>
+        <managed-bean-class>es.entradas.publicidad.Email</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>goDatosAdmin</from-outcome>
+            <to-view-id>/admin/datosAdmin.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goDatosTicketType</from-outcome>
+            <to-view-id>/ticketType/datosTicketType.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goDatosCliente</from-outcome>
+            <to-view-id>/cliente/datosCliente.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goDatosUser</from-outcome>
+            <to-view-id>/user/datosUser.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goDatosTicket</from-outcome>
+            <to-view-id>/ticket/datosTicket.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goBusquedaCliente</from-outcome>
+            <to-view-id>/cliente/buscarCliente.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+
+        <navigation-case>
+            <from-outcome>goBusquedaTicket</from-outcome>
+            <to-view-id>/ticket/buscarTicket.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goBusquedaTicketType</from-outcome>
+            <to-view-id>/ticketType/buscarTicketType.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goNuevoTicket</from-outcome>
+            <to-view-id>/ticket/ticketInsert.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goEmail</from-outcome>
+            <to-view-id>/publicidad/email.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ticketType_xls</from-outcome>
+            <to-view-id>/servlet/ExcelTipoTicket.xls</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>ticket_xls</from-outcome>
+            <to-view-id>/servlet/ExcelTicket.xls</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>cliente_xls</from-outcome>
+            <to-view-id>/servlet/ExcelCliente.xls</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>user_xls</from-outcome>
+            <to-view-id>/servlet/ExcelUser.xls</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>pdfUser</from-outcome>
+            <to-view-id>/servlet/PdfUser</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>pdfTicket</from-outcome>
+            <to-view-id>/servlet/PdfTicket</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>pdfTicketGroupByTyte</from-outcome>
+            <to-view-id>/servlet/PdfTicketGroupByTyte</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>pdfFormularioCliente</from-outcome>
+            <to-view-id>/servlet/PdfFormularioCliente.pdf</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>printTicket</from-outcome>
+            <to-view-id>/servlet/TicketEntrada.pdf</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>dialog:seleccionarDestinatarios</from-outcome>
+            <to-view-id>/cliente/dialogBuscarCliente.jsp</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goBusquedaUsuario</from-outcome>
+            <to-view-id>/user/buscarUser.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goDatosUsuario</from-outcome>
+            <to-view-id>/user/datosUser.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>logout</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goChangePass</from-outcome>
+            <to-view-id>/changePass/changePass.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goInformeByGoup</from-outcome>
+            <to-view-id>/informes/buscarTicketPorTipo.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goIndexTicket</from-outcome>
+            <to-view-id>/ticket/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goIndexTicketType</from-outcome>
+            <to-view-id>/ticketType/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goIndexUsuario</from-outcome>
+            <to-view-id>/user/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goIndexCliente</from-outcome>
+            <to-view-id>/cliente/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>goGrafica</from-outcome>
+            <to-view-id>/informes/grafica.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+
+    <managed-bean>
+        <managed-bean-name>userLogin</managed-bean-name>
+        <managed-bean-class>es.entradas.userLogin.UserLogin</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>ChartTicketModel</managed-bean-name>
+        <managed-bean-class>es.entradas.grafica.ChartTicketModel</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>/cliente/datosClienteExterno.jsp</from-view-id>
+        <navigation-case>
+            <from-outcome>goLogin</from-outcome>
+            <to-view-id>/index.jsp</to-view-id>
+            <redirect/>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
