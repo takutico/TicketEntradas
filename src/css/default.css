@@ -1,0 +1,393 @@
+af|panelPage::copyright{/*Styles the "appCopyright" facet.*/
+                        /*top: 300px;position: relative;*/
+                        /*top: 180px;
+                        position: absolute;*/
+}
+
+/*.p_OraContentFooterRule, .xac {
+    background-color:#669966;
+    color:#669966;
+    top: 80px;
+    position: absolute;
+}*/
+
+af|panelBorderLayout-positioned::center{
+    height: 600px;
+}
+#centro{
+    height: 600px;
+}
+
+af|panelPage::about{
+    min-width: 400px;
+}
+
+.bodyTicket{
+    top: 700px;
+}
+
+#container{
+    /*width: 800px;*/
+    min-width: 800px;
+    max-width: 1024px;
+    background-color: #D3D2D2;
+}
+
+.titulocabecera{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+    top: 30px;
+    position: relative;
+}
+
+.fuenteIndentado{
+    text-align: justify;
+    font-size: 12px;
+}
+
+.fuenteIndentadoNegrita{
+    text-align: justify;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menuLeft{
+    /*width: 172px;*/
+    width: 100%;
+    background-color: #D3D2D2;
+    margin-right: 25px;
+}
+
+af|panelCaptionGroup::caption{
+    color: #4f4c4d;
+    background-color: #D3D2D2;
+    font-weight: bold;
+}
+
+#centro {
+padding-left:20px;
+}
+
+/*af|panelAccordion::header-collapsed{
+    background-color: #EBF5FE;
+}
+
+af|panelAccordion::header-expanded{
+    background-color: #EBF5FE;
+}
+
+af|panelAccordion{
+    background-color: #D3D2D2;
+}*/
+/* ********************** PANEL ACCORDION ** /
+/*This can be used to style the root element of a panelAccordion.*/
+af|panelAccordion{
+    text-decoration:none;
+    font-size:12pt;
+    color:black;
+}
+/*This can be used to style the parent element of each showDetailItem in a panelAccordion.*/
+af|panelAccordion::content{
+    /*background:#EBF5FE;*/
+    text-decoration:none;
+    font-size:12pt;
+    color:black;
+}
+
+/*This can be used to style the header region of each collapsed showDetailItem in a panelAccordion.*/
+af|panelAccordion::header-collapsed{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:12pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#CBC3BE;
+    background:white url(/media/buttonLikeHead.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:5px 8px;
+    text-decoration:none;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border-width:1px 1px 1px 1px
+
+}
+/* This can be used to style the header region of each disabled showDetailItem in a panelAccordion. */
+af|panelAccordion::header-disabled{
+
+}
+/*This can be used to style the header region of each expanded showDetailItem in a panelAccordion.*/
+af|panelAccordion::header-expanded{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:12pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#8DB7D3;
+    background:white url(/media/buttonLikeHeadSelected.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:5px 8px;
+    text-decoration:none;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border-width:1px 1px 1px 1px
+
+}
+/*This can be used to style the link element for the title of each enabled showDetailItem in a panelAccordion.*/
+af|panelAccordion::title-link{
+    text-decoration:none;
+    font-size:12pt;
+    colore:black;
+}
+/*This can be used to style the link element for the title of each disabled showDetailItem in a panelAccordion.*/
+af|panelAccordion::title-disabled-link{
+    text-decoration:none;
+    font-size:12pt;
+    colore:black;
+}
+af|panelAccordion::toolbar{
+
+}
+/* ******************** FIN PANEL ACCORDION ********************************** */
+af|separator{
+    background-color: #D3D2D2;
+}
+
+.subMenu{
+    background-color: #D3D2D2;
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:12pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#CBC3BE;
+    background:white url(/media/fondoMenuSuperior.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:5px 8px;
+    text-decoration:none;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border-width:1px 1px 1px 1px
+}
+
+.loginBody{
+    width: 500px;
+    background-color: #bbbbbb;
+    text-align: center;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-color: #999999;
+    border-left-color: #999999;
+    border-bottom-color: #999999;
+    border-top-color: #999999;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    margin-top: 100px;
+    text-align: center;
+}
+.loginForm{
+    background-position: center;
+    background-color: #EBF5FE;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: 9px;
+    text-align: center;
+    margin-left: 100px;
+
+}
+
+.loginCabecera{
+    /*font-weight: bold;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    background-color: #31579E;
+    color: #ffffff;
+    border: 0px;
+    background-position: center;*/
+    background-color: #1A1919;
+    color: #ffffff;
+    font-size:10pt;
+    font-weight: bold;
+    text-align: center;
+}
+.principal{
+    width: 100%;
+    background-color: #EBF5FE;
+}
+.cabecera{
+    /*color: #ffffff;
+    background-color: #888888;
+    width: 100%;*/
+    /*background-image: url(/media/fondoCabeceraCentro.png);*/
+    /*background-repeat: repeat-x;*/
+
+    min-width: 800px;
+    max-width: 1024px;
+    /*margin: 0px auto;*/
+    background-color: #1A1919;
+    color: #D3D2D2;
+    /*border: 1px solid gray;*/
+    /*line-height: 130%;*/
+    height: 64pt;
+    width: 566pt;
+    font-size:20pt;
+    text-transform: capitalize;
+}
+
+.barraMenu{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:12pt;font-weight:normal;display:block;cursor:pointer;
+    color:#ffffff ! important;border-style:solid;border-color:#CBC3BE;
+    background:white url(/media/fondoMenu_4.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:7px 12px;text-decoration:none;
+    -moz-border-radius-topleft:6px;-moz-border-radius-topright:6px;-webkit-border-top-left-radius:6px;-webkit-border-top-right-radius:6px;border-top-left-radius:6px;border-top-right-radius:6px;border-width:1px 1px 0 1px;
+    /*-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;display:block;margin:0 0 2px 0;*/
+}
+/*.pnlButttonBar{
+    background-color: #EBF5FE;
+}*/
+/* Color de fondo de la celda/row*/
+.AFTableCellDataBackgroundColor:alias{
+    background-color: #FFFFFF;
+    color: #4F4C4D;
+}
+
+/* Color de fondo de la celda/row alterna*/
+.AFTableCellDataBandedBackgroundColor:alias{
+    background-color:#eaeaea;
+    color: #4F4C4D;
+}
+
+/*Estilo de la cabecera de las tablas*/
+af|column::header-text{
+    background-color: #1A1919;
+    color: #ffffff;
+    font-size:10pt;
+    font-weight: bold;
+    text-align: center;
+}
+af|table::detail{
+    text-transform: capitalize;
+}
+/*Estilo de los botones*/
+af|commandButton{
+    line-height:1em;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:9pt;
+    font-weight:bold;
+    padding:2px 4px;
+    text-decoration:none;
+    cursor:pointer;
+    color:black ! important;border-width:1px;
+    border-style:solid;
+    border:1px solid #FFA601;;
+    background: #FFA601 url(/media/btnFondo_4.png) repeat-x top left;
+    -moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;display:block;margin:0 0 2px 0;
+    vertical-align: middle;
+    color: #4f4c4d;
+}
+
+af|body{
+    min-width: 800px;
+    max-width: 1024px;
+    margin: 0px auto;
+    background-color: #D3D2D2;
+    color: #00000;
+    /*border: 1px solid gray;*/
+    /*line-height: 130%;*/
+    font-size:12pt;
+}
+
+/* PANEL TAB */
+/* This styles the top panelTabbed. You can use this to add padding and margins and borders, for example. */
+af|panelTabbed::orientation-top	{}
+
+/*This styles the bottom panelTabbed. You can use this to add padding and margins and borders, for example.*/
+af|panelTabbed::orientation-bottom{}
+/*This styles each unselected tab.*/
+af|panelTabbed::tab{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:10pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#CBC3BE;
+    background:white url(/media/buttonLikeHead.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:7px 12px;text-decoration:none;-moz-border-radius-topleft:4px;-moz-border-radius-topright:4px;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;border-width:1px 1px 0 1px
+}
+/*This styles each unselected tab link.*/
+af|panelTabbed::tab-link{}
+/*This styles each selected tab.*/
+af|panelTabbed::tab-selected{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:10pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#8DB7D3;
+    background:white url(/media/buttonLikeHeadSelected.png) repeat-x top left;height:auto;margin:0 1px 0 0;padding:7px 12px;text-decoration:none;-moz-border-radius-topleft:4px;-moz-border-radius-topright:4px;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;border-width:1px 1px 0 1px
+}
+/*This styles each selected tab link.*/
+af|panelTabbed::tab-selected-link{}
+/*This is a cell with no content that renders before the selected cell. You can style this cell to highlight the selected cell, if desired.*/
+af|panelTabbed::separator-before-selected{}
+/*This is a cell with no content that renders after the selected cell. You can style this cell to highlight the selected cell, if desired.*/
+af|panelTabbed::separator-after-selected{}
+/*This style is on the cells between each unselected step.*/
+af|panelTabbed::separator{}
+/*The style on the first cell. You can left-align by setting width:0% on this, and width:100% on cell-end.*/
+af|panelTabbed::cell-start{}
+/*The style on the last cell.*/
+af|panelTabbed::cell-end{}
+/*The style on the body of the panelTabbed; ie., the contents.*/
+af|panelTabbed::body{
+    line-height:1em;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:10pt;font-weight:normal;display:block;cursor:pointer;
+    color:black ! important;border-style:solid;border-color:#8DB7D3;
+    background:white url(/media/buttonLikeHeadHover.png) repeat-x top left;
+    height:auto;margin:0 1px 0 0;padding:7px 12px;text-decoration:none;
+    -moz-border-radius-topleft:4px;-moz-border-radius-topright:4px;
+    -webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;border-width:1px 1px 1px 1px
+}
+af|inputDate::launch-icon{
+    content: url(/media/calendar.png);
+    width: 19; height: 24;
+}
+af|panelFormLayout{
+    background-position: center;
+    /*background-color: #EBF5FE;*/
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: 9px;
+    /*width: 95%;*/
+    text-align: center;
+}
+af|panelHeader{
+    color: #4f4c4d;
+    background-color: #D3D2D2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+af|panelHeader{
+    background-color: #D3D2D2;
+}	/*This can be used to set common properties that are shared across all header levels.*/
+af|panelHeader::icon-style{}	/*Styles the header icon.*/
+af|panelHeader::level-one{font-weight: bold;color: #4f4c4d;}	/*Styles level one headers.*/
+af|panelHeader::level-two{}	/*Styles level two headers.*/
+af|panelHeader::level-three{}	/*Styles level three headers.*/
+af|panelHeader::level-four{
+    background-color: #D3D2D2;
+}	/*Styles level four headers.*/
+af|panelHeader::level-five{}	/*Styles level five headers.*/
+af|panelHeader::level-six{}	/*Styles level six headers.*/
+af|panelHeader::error{}	/*Styles level one header when messageType is error.*/
+
+af|selectBooleanCheckbox::disabled-checked-icon{content: url(/media/activo_true.png);}	/*The icon that is displayed when the checkbox is readOnly, disabled, and checked.*/
+af|selectBooleanCheckbox::disabled-unchecked-icon{content: url(/media/activo_false.png);} /*The icon that is displayed when the checkbox is readOnly, disabled, and unchecked.*/
+
+af|selectBooleanCheckbox::read-only-checked-icon{content: url(/media/activo_true.png);}	/*The icon that is displayed when the checkbox is read-only and checked.*/
+af|selectBooleanCheckbox::read-only-unchecked-icon{content: url(/media/activo_false.png)}	/*The icon that is displayed when the checkbox is read-only and unchecked.*/
+
+
+af|dialog::blocked-area{
+    background:white !important;
+    opacity: 0.60;
+    -moz-opacity: 0.60;
+    filter:alpha(opacity=60);
+}
