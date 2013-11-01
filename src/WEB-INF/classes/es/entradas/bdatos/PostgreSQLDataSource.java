@@ -15,10 +15,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import org.postgresql.ds.PGPoolingDataSource;
 
-/**
- *
- * @author edantie
- */
 public class PostgreSQLDataSource {
     private PGPoolingDataSource ds = null;
     private static PostgreSQLDataSource thisInstance = null;
